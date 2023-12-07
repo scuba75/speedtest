@@ -1,0 +1,25 @@
+[
+  {
+    "id": "upload",
+    "name": "Upload",
+    "units": "Mbps",
+    "icon": "mdi:speedometer"
+  },
+  {
+    "id": "download",
+    "name": "Download",
+    "units": "Mbps",
+    "icon": "mdi:speedometer"
+  },
+  {
+    "id": "ping",
+    "name": "Ping",
+    "units": "s",
+    "icon": "mdi:speedometer"
+  },
+  {
+    "id": "time",
+    "name": "Time",
+    "icon": "mdi:clock"
+  }
+]

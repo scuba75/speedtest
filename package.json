@@ -1,0 +1,18 @@
+{
+  "name": "speedtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/speedtest",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/speedtest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "mqtt": "^5.3.3",
+    "speedtest-net": "^2.2.0"
+  }
+}

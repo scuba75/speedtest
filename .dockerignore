@@ -1,0 +1,6 @@
+.git
+Dockerfile
+buildprodimage.sh
+buildtestimage.sh
+.testregistry
+.gitignore
