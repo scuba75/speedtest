@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/speedtest",
-    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/speedtest"
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh scuba75/speedtest",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh scuba75/speedtest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "chalk": "^4.1.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.3",
     "mqtt": "^5.3.3",
     "speedtest-net": "^2.2.0"
   }

@@ -1,6 +1,4 @@
-/*
-Logger class for easy and aesthetically pleasing console logging
-*/
+'use strict'
 const chalk = require('chalk');
 const Level = {};
 Level.ERROR = 'error';

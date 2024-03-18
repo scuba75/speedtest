@@ -71,4 +71,4 @@ module.exports.sendDeviceAvailability = (value)=>{
       resolve()
     })
   })
-}
+}                                  
