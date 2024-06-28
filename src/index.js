@@ -13,6 +13,7 @@ const createSensors = async()=>{
       log.info(`Creating sensor for ${sensors[i].name}...`)
       await mqtt.registerSensor(sensors[i].id, sensors[i].name, sensors[i].icon, sensors[i].units)
     }
+    log.info(`Created all sensors...`)
     updateData()
   }catch(e){
     log.error(e)

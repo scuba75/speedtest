@@ -72,7 +72,7 @@ module.exports = async()=>{
       await updateHistory(data)
       await mqtt.sendDeviceAvailability('Online')
       for(let i in data){
-        if(sensors.filter(x=>x.id === i).length > 0) await mqtt.sendSensorValue(i, data[i]?.toString())
+        if(sensors.filter(x=>x.id === i).length > 0) await mqtt.sendSensorValue(i, data[i]?.toString(), true)
       }
     }
 
@@ -102,8 +102,8 @@ module.exports.sendLast = async(res)=>{
     if(data){
       await mqtt.sendDeviceAvailability('Online')
       for(let i in data){
-        if(sensors.filter(x=>x.id === i).length > 0) await mqtt.sendSensorValue(i, data[i]?.toString())
-      }                                                                                                
+        if(sensors.filter(x=>x.id === i).length > 0) await mqtt.sendSensorValue(i, data[i]?.toString(), true)
+      }
       res.json(data)
       return;
     }

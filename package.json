@@ -8,6 +8,9 @@
     "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh scuba75/speedtest",
     "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh scuba75/speedtest"
   },
+  "nodemonConfig": {
+      "ignore": ["/app/data/*"]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

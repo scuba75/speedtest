@@ -56,9 +56,9 @@ module.exports.registerSensor = (id, name, icon, unit)=>{
     })
   })
 }
-module.exports.sendSensorValue = (id, value)=>{
+module.exports.sendSensorValue = (id, value, retain = false)=>{
   return new Promise((resolve, reject)=>{
-    client.publish(`homeassistant/sensor/${DEVICE_NAME}/${DEVICE_NAME}_${id}/state`, value, { qos: 1, retain: false }, (error)=>{
+    client.publish(`homeassistant/sensor/${DEVICE_NAME}/${DEVICE_NAME}_${id}/state`, value, { qos: 1, retain: retain }, (error)=>{
       if(error) reject(error)
       resolve()
     })
@@ -71,4 +71,4 @@ module.exports.sendDeviceAvailability = (value)=>{
       resolve()
     })
   })
-}                                  
+}
