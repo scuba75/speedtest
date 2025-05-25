@@ -10,7 +10,7 @@ let SYNC_HOURS = process.env.SYNC_HOURS || 2
 const createSensors = async()=>{
   try{
     for(let i in sensors){
-      log.info(`Creating sensor for ${sensors[i].name}...`)
+      log.info(`Creating sensor for ${sensors[i].name} (${sensors[i].units})...`)
       await mqtt.registerSensor(sensors[i].id, sensors[i].name, sensors[i].icon, sensors[i].units)
     }
     log.info(`Created all sensors...`)
