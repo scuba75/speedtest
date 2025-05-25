@@ -33,6 +33,7 @@ module.exports.publish = (topic, message, retain = false) =>{
   })
 }
 module.exports.registerSensor = (id, name, icon, unit)=>{
+  console.log(unit)
   return new Promise((resolve, reject)=>{
     let payload = {
       name: name,
