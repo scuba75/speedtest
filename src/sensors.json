@@ -14,7 +14,7 @@
   {
     "id": "ping",
     "name": "Ping",
-    "units": "s",
+    "units": "ms",
     "icon": "mdi:speedometer"
   },
   {
